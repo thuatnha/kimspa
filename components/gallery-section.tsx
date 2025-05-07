@@ -139,7 +139,7 @@ export function GallerySection() {
           ))}
         </motion.div>
 
-        <AnimatedSection delay={0.5} direction="up" className="flex justify-center mt-10">
+        {/* <AnimatedSection delay={0.5} direction="up" className="flex justify-center mt-10">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link href="/gallery">
               <Button className="px-8 bg-[#fdc700] hover:bg-[#e3b400] text-black transition-colors">
@@ -153,7 +153,7 @@ export function GallerySection() {
               </Button>
             </Link>
           </motion.div>
-        </AnimatedSection>
+        </AnimatedSection> */}
       </div>
     </section>
   )
