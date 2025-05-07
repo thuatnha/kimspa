@@ -132,7 +132,7 @@ function HeroSection() {
           </AnimatedSection>
           <AnimatedSection direction="left" delay={0.3} className="flex items-center justify-center">
             <AnimatedImage
-              src="https://salt.tkbcdn.com/ts/ds/ff/bb/f9/c64733c3d4cdd915199f96342b38bf6c.png"
+              src="https://salt.tkbcdn.com/ts/ds/68/d8/1b/b2e21fdf0743db80eef30633f1fa4d40.png"
               alt="Spa Treatment"
               width={550}
               height={450}
@@ -260,7 +260,7 @@ function BenefitsSection() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
           <AnimatedSection direction="right" className="flex items-center justify-center">
             <AnimatedImage
-              src="https://salt.tkbcdn.com/ts/ds/f4/56/5a/4a43c390ae73a3d6a0026984e3a754f6.jpg"
+              src="https://salt.tkbcdn.com/ts/ds/f8/eb/19/9112fc485a0f7a76f284114919fa5884.jpg"
               alt="Spa Benefits"
               width={550}
               height={450}

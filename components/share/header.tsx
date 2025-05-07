@@ -57,7 +57,7 @@ export default function Header() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <img src="https://salt.tkbcdn.com/ts/ds/b1/df/50/e3dcc145cc85f16c0d21adb7816910f8.png" alt="Logo" className="h-auto w-20" />
+            <img src="https://salt.tkbcdn.com/ts/ds/d7/b8/d6/486cea63fc38a16d1602f83b27b40a57.png" alt="Logo" className="h-auto w-20" />
             {/* <span className="text-xl font-bold text-[#fdc700]">KimSkin</span>
             <span className="text-xl font-light text-[#5D5D5D]">Clinic</span> */}
           </motion.div>

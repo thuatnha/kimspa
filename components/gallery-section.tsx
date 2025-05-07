@@ -13,37 +13,37 @@ import Image from "next/image"
 const galleryItems = [
   {
     id: "1",
-    src: "https://salt.tkbcdn.com/ts/ds/92/ee/a4/0f61c4460af654629792834641e8a19e.jpg",
+    src: "https://salt.tkbcdn.com/ts/ds/c3/67/21/e1e3c95532c7d05e9fe3cf6a072b6e00.jpg",
     alt: "Không gian spa",
     title: "Không Gian Thư Giãn",
   },
   {
     id: "2",
-    src: "https://salt.tkbcdn.com/ts/ds/9f/88/2f/66fc91594e6d3c89aedd7743b47a601f.jpg",
+    src: "https://salt.tkbcdn.com/ts/ds/01/4c/3b/1d88f1f5d0fbc62c68a6ee803805fa0e.jpg",
     alt: "Không gian spa",
     title: "Không Gian Thư Giãn",
   },
   {
     id: "3",
-    src: "https://salt.tkbcdn.com/ts/ds/c3/5d/e4/5a93b1387ec433f0271b0936c53daf1c.jpg",
+    src: "https://salt.tkbcdn.com/ts/ds/1b/6e/ba/0376370981b5365fec2562cfe95bb3bd.jpg",
     alt: "Massage thư giãn",
     title: "Massage Thư Giãn",
   },
   {
     id: "4",
-    src: "https://salt.tkbcdn.com/ts/ds/9d/02/13/9d0a40aeff1ce7fdc559a6a0ff188963.jpg",
+    src: "https://salt.tkbcdn.com/ts/ds/fe/c6/57/b2686384de81982f1cad77c9e00d6420.jpg",
     alt: "Phòng trị liệu",
     title: "Phòng trị liệu",
   },
   {
     id: "5",
-    src: "https://salt.tkbcdn.com/ts/ds/e5/66/06/829bb22271df5fe54f00ff6e85aa4aa6.jpg",
+    src: "https://salt.tkbcdn.com/ts/ds/44/8e/2c/4dd4c59d9885487de67c78839b1e303e.jpg",
     alt: "Phòng trị liệu",
     title: "Phòng trị liệu",
   },
   {
     id: "6",
-    src: "https://salt.tkbcdn.com/ts/ds/cc/c6/91/5a4ca243c3fd0ed2bbf4af3e39505245.jpg",
+    src: "https://salt.tkbcdn.com/ts/ds/a1/0e/c2/0d3e43b69a4190dae18119162e7f2153.jpg",
     alt: "Phòng trị liệu",
     title: "Phòng Trị Liệu",
   },
