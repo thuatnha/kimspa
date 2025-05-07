@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="vi" suppressHydrationWarning>
       <head>
-        <title>KimSkin Clinic - Tái Sinh Làn Da, Khơi Nguồn Vẻ Đẹp</title>
+        <title>Kim Skin Clinic - Tái Sinh Làn Da, Khơi Nguồn Vẻ Đẹp</title>
         <meta name="description" content="Dịch vụ spa và skincare cao cấp dành cho phụ nữ" />
       </head>
       <body className={`${roboto.variable} font-sans`}>

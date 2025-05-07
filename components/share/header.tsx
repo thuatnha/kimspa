@@ -3,7 +3,9 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-
+ 
+// Logo Black: https://salt.tkbcdn.com/ts/ds/b1/df/50/e3dcc145cc85f16c0d21adb7816910f8.png
+// Logo White: https://salt.tkbcdn.com/ts/ds/98/2e/45/8e24983e595a784ec7d394b752d2f7ed.png
 const ListMenu = [{
     name: "Dịch Vụ",
     href: "#services",
@@ -55,7 +57,7 @@ export default function Header() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <img src="https://salt.tkbcdn.com/ts/ds/98/2e/45/8e24983e595a784ec7d394b752d2f7ed.png" alt="Logo" className="h-auto w-20" />
+            <img src="https://salt.tkbcdn.com/ts/ds/b1/df/50/e3dcc145cc85f16c0d21adb7816910f8.png" alt="Logo" className="h-auto w-20" />
             {/* <span className="text-xl font-bold text-[#fdc700]">KimSkin</span>
             <span className="text-xl font-light text-[#5D5D5D]">Clinic</span> */}
           </motion.div>
