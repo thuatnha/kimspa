@@ -37,7 +37,7 @@ export default function Footer() {
             {[
               {
                 title: "Dịch Vụ",
-                links: ["Trẻ Hóa Da Mặt", "Điều Trị Nám Sâu", "Massage Thư Giãn", "Chăm Sóc Body", "Xem Tất Cả Dịch Vụ"],
+                links: ["Trẻ Hóa Da Mặt", "Điều Trị Nám Sâu", "Vật Lý Trị Liệu", "Chăm Sóc Body", "Xem Tất Cả Dịch Vụ"],
               },
               {
                 title: "Thông Tin",

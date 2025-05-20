@@ -175,8 +175,21 @@ function ServicesSection() {
             </AnimatedSection>
           </div>
         </AnimatedSection>
-        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3">
+        <div className="mx-auto grid w-full items-center gap-6 py-12 lg:grid-cols-4">
           {[
+            {
+              title: "Lấy nhân mụn laser",
+              description: "Loại bỏ mụn, giảm thâm, làm dịu và tái tạo làn da.",
+              features: [
+                "Soi da, tẩy trang, tẩy tế bào chết",
+                "Xông hơi, hút bã nhờn, lấy nhân mụn",
+                "Sát khuẩn, bôi tinh dầu kháng khuẩn",
+                "Đắp mặt nạ, chiếu ánh sáng sinh học",
+                "Điện di tinh chất mụn",
+                "Laser toning giúp mờ thâm",
+                "Tư vấn chăm sóc da tại nhà",              
+              ],
+            },
             {
               title: "Trẻ Hóa Da Mặt",
               description: "Liệu trình chuyên sâu giúp làn da trẻ trung, căng mịn và rạng rỡ.",
