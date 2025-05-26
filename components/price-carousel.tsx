@@ -32,7 +32,7 @@ export function PriceCarousel() {
   const pricePackages: PricePackage[] = [
     {
       id: "basic",
-      title: "Cham Sóc Da Cơ Bản",
+      title: "Chăm Sóc Da Cơ Bản",
       price: 799000,
       description: "Phù hợp cho mọi người.",
       features: [
