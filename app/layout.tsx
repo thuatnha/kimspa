@@ -23,6 +23,7 @@ export default function RootLayout({
           name="description"
           content="Dịch vụ spa và skincare cao cấp dành cho phụ nữ"
         />
+        <meta name="facebook-domain-verification" content="0e7mjrlr4zpxrsk7dyhc53ya62r947" />
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-XD0P2G3SGZ"
