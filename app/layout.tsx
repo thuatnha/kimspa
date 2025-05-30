@@ -18,12 +18,12 @@ export default function RootLayout({
   return (
     <html lang="vi" suppressHydrationWarning>
       <head>
-        <title>Kim Skin Clinic - Tái Sinh Làn Da, Khơi Nguồn Vẻ Đẹp</title>
+        <title>Kim Skin Beauty And Health Care - Tái Sinh Làn Da, Khơi Nguồn Vẻ Đẹp</title>
         <meta
           name="description"
           content="Dịch vụ spa và skincare cao cấp dành cho phụ nữ"
         />
-        <meta name="facebook-domain-verification" content="0e7mjrlr4zpxrsk7dyhc53ya62r947" />
+        <meta name="facebook-domain-verification" content="ojoyp8vqw14qbz5jci6em3s1xa00cj" />
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-XD0P2G3SGZ"

@@ -83,7 +83,7 @@ export default function Footer() {
           <AnimatedSection direction="up" delay={0.6}>
             <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-xs text-[#5D5D5D]">
-                © {new Date().getFullYear()} KimSkin Clinic. Tất cả quyền được bảo lưu.
+                © {new Date().getFullYear()} Kim Skin Beauty And Health Care. Tất cả quyền được bảo lưu.
               </p>
               <nav className="flex gap-4">
                 <Link href="#" className="text-xs text-[#5D5D5D] hover:text-[#fdc700] transition-colors">
