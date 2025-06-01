@@ -91,7 +91,7 @@ export default function Header() {
               Liên Hệ
             </Link>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button className="bg-[#fdc700] hover:bg-[#e3b400] text-black transition-colors">Đặt Lịch Ngay</Button>
+              <Link className="bg-[#fdc700] hover:bg-[#e3b400] text-black transition-colors p-3 rounded-md" href="#booking">Đặt Lịch Ngay</Link>
             </motion.div>
           </motion.div>
   
@@ -137,12 +137,13 @@ export default function Header() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0.3 }}
               >
-                <Button
+                <Link
                   className="w-full bg-[#fdc700] hover:bg-[#e3b400] text-black transition-colors"
                   onClick={() => setIsMenuOpen(false)}
+                  href="#booking"
                 >
                   Đặt Lịch Ngay
-                </Button>
+                </Link>
               </motion.div>
             </nav>
           </motion.div>

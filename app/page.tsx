@@ -133,8 +133,8 @@ function HeroSection() {
           <AnimatedSection direction="left" delay={0.3} className="flex items-center justify-center">
             <AnimatedImage
               // src="https://salt.tkbcdn.com/ts/ds/d4/94/78/63610539328fc6f737dba3f0de4f7187.png"
-              src="https://salt.tkbcdn.com/ts/ds/1e/40/27/640de51856d6aa72112f5bd7e0a5dc66.png"
-              // src="https://salt.tkbcdn.com/ts/ds/18/09/49/dd4a90adfbaa18d7b34490e52b2f89ba.png"
+              // src="https://salt.tkbcdn.com/ts/ds/1e/40/27/640de51856d6aa72112f5bd7e0a5dc66.png"
+              src="https://salt.tkbcdn.com/ts/ds/18/09/49/dd4a90adfbaa18d7b34490e52b2f89ba.png"
               alt="Spa Treatment"
               width={300}
               height={180}
@@ -517,7 +517,7 @@ function PricingSection() {
 
 function CtaSection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white overflow-hidden">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-white overflow-hidden" id="booking">
       <div className="container px-4 md:px-6">
         <AnimatedSection direction="up" className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -536,7 +536,7 @@ function CtaSection() {
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button size="lg" className="px-8 bg-[#fdc700] hover:bg-[#e3b400] text-black transition-colors">
-                  Đặt Lịch Ngay
+                  Đặt Lịch Ngay: 0938 060 555
                 </Button>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -545,7 +545,7 @@ function CtaSection() {
                   variant="outline"
                   className="px-8 text-[#fdc700] border-[#fdc700] hover:bg-[#FFF9E0] transition-colors"
                 >
-                  Nhận Tư Vấn Miễn Phí
+                  Nhận Tư Vấn Miễn Phí: 0938 060 555
                 </Button>
               </motion.div>
             </div>
