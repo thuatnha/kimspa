@@ -132,10 +132,12 @@ function HeroSection() {
           </AnimatedSection>
           <AnimatedSection direction="left" delay={0.3} className="flex items-center justify-center">
             <AnimatedImage
-              src="https://salt.tkbcdn.com/ts/ds/68/d8/1b/b2e21fdf0743db80eef30633f1fa4d40.png"
+              // src="https://salt.tkbcdn.com/ts/ds/d4/94/78/63610539328fc6f737dba3f0de4f7187.png"
+              src="https://salt.tkbcdn.com/ts/ds/1e/40/27/640de51856d6aa72112f5bd7e0a5dc66.png"
+              // src="https://salt.tkbcdn.com/ts/ds/18/09/49/dd4a90adfbaa18d7b34490e52b2f89ba.png"
               alt="Spa Treatment"
-              width={550}
-              height={450}
+              width={300}
+              height={180}
               // className="rounded-lg object-cover shadow-lg"
               // className="object-cover"
               effect="zoom"
