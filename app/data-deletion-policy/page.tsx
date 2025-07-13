@@ -90,8 +90,7 @@ const DataDeletionPolicyPage = () => {
               <strong>Hộ kinh doanh KIM SKIN CLINIC & HEALTH CARE</strong>
             </p>
             <p>
-              Địa chỉ: 153 đường Đặng Văn Ngữ, phường 13, quận Phú Nhuận, Tp Hồ
-              Chí Minh, Việt Nam
+              Địa chỉ: Đang chuyển địa điểm (sẽ cập nhật sau khi có địa chỉ mới)
             </p>
             <p>Điện thoại: 0938060555</p>
             <p>Email: nguyenhoangbaokim2015@gmail.com</p>

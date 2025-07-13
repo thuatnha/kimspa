@@ -8,220 +8,74 @@ import { motion } from "framer-motion";
 import type { Service } from "@/types/service-types";
 import Header from "@/components/share/header";
 import Footer from "@/components/share/footer";
-
-// Danh sách các dịch vụ (giống như trong services/page.tsx)
-const services: Service[] = [
-  {
-    id: "1",
-    title: "Trẻ Hóa Da Mặt RF",
-    description:
-      "Liệu trình sử dụng công nghệ RF Thermage giúp kích thích sản sinh collagen, làm săn chắc và trẻ hóa làn da.",
-    price: 1500000,
-    duration: 60,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "face",
-    featured: true,
-    benefits: [
-      "Làm săn chắc da",
-      "Giảm nếp nhăn",
-      "Cải thiện đường nét khuôn mặt",
-      "Kích thích sản sinh collagen",
-    ],
-  },
-  {
-    id: "2",
-    title: "Điều Trị Nám Chuyên Sâu",
-    description:
-      "Liệu trình điều trị nám sử dụng công nghệ laser kết hợp với các sản phẩm đặc trị giúp làm mờ và ngăn ngừa nám tái phát.",
-    price: 2200000,
-    duration: 75,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "treatment",
-    featured: true,
-    benefits: [
-      "Làm mờ vết nám",
-      "Cân bằng sắc tố da",
-      "Ngăn ngừa nám tái phát",
-      "Làm sáng da tự nhiên",
-    ],
-  },
-  {
-    id: "3",
-    title: "Massage Thụy Điển",
-    description:
-      "Kỹ thuật massage truyền thống giúp thư giãn cơ bắp, giảm căng thẳng và cải thiện tuần hoàn máu.",
-    price: 850000,
-    duration: 90,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "massage",
-    featured: true,
-    benefits: [
-      "Giảm căng thẳng",
-      "Thư giãn cơ bắp",
-      "Cải thiện tuần hoàn máu",
-      "Tăng cường sức khỏe tinh thần",
-    ],
-  },
-  {
-    id: "4",
-    title: "Tẩy Tế Bào Chết Toàn Thân",
-    description:
-      "Loại bỏ tế bào chết trên da bằng các thành phần tự nhiên, giúp da mềm mịn và sáng hơn.",
-    price: 750000,
-    duration: 45,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "body",
-    featured: false,
-    benefits: [
-      "Loại bỏ tế bào chết",
-      "Làm mềm mịn da",
-      "Kích thích tái tạo da",
-      "Cải thiện kết cấu da",
-    ],
-  },
-  {
-    id: "5",
-    title: "Chăm Sóc Da Cơ Bản",
-    description:
-      "Liệu trình làm sạch sâu, tẩy tế bào chết và dưỡng ẩm giúp da khỏe mạnh và rạng rỡ.",
-    price: 650000,
-    duration: 60,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "face",
-    featured: false,
-    benefits: [
-      "Làm sạch sâu",
-      "Cấp ẩm cho da",
-      "Cân bằng độ pH",
-      "Làm dịu da kích ứng",
-    ],
-  },
-  {
-    id: "6",
-    title: "Điều Trị Mụn Chuyên Sâu",
-    description:
-      "Liệu trình điều trị mụn toàn diện, từ làm sạch sâu đến sử dụng công nghệ ánh sáng sinh học tiêu diệt vi khuẩn gây mụn.",
-    price: 1200000,
-    duration: 75,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "treatment",
-    featured: false,
-    benefits: [
-      "Giảm viêm sưng",
-      "Tiêu diệt vi khuẩn gây mụn",
-      "Ngăn ngừa mụn tái phát",
-      "Làm mờ vết thâm sau mụn",
-    ],
-  },
-  {
-    id: "7",
-    title: "Massage Đá Nóng",
-    description:
-      "Kỹ thuật massage sử dụng đá bazan nóng giúp thư giãn cơ bắp sâu và cải thiện lưu thông máu.",
-    price: 950000,
-    duration: 90,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "massage",
-    featured: false,
-    benefits: [
-      "Thư giãn cơ bắp sâu",
-      "Giảm đau nhức",
-      "Cải thiện lưu thông máu",
-      "Giải tỏa căng thẳng",
-    ],
-  },
-  {
-    id: "8",
-    title: "Tắm Trắng Cao Cấp",
-    description:
-      "Liệu trình tắm trắng sử dụng các thành phần tự nhiên giúp làm sáng da, mờ thâm và đều màu da.",
-    price: 1800000,
-    duration: 120,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "body",
-    featured: false,
-    benefits: [
-      "Làm sáng da tự nhiên",
-      "Mờ vết thâm",
-      "Đều màu da",
-      "Dưỡng ẩm sâu",
-    ],
-  },
-  {
-    id: "9",
-    title: "Gói VIP Toàn Diện",
-    description:
-      "Trải nghiệm spa toàn diện bao gồm chăm sóc da mặt, massage toàn thân và các liệu trình đặc biệt.",
-    price: 3500000,
-    duration: 180,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "package",
-    featured: true,
-    benefits: [
-      "Chăm sóc da mặt cao cấp",
-      "Massage toàn thân",
-      "Tẩy tế bào chết",
-      "Đắp mặt nạ vàng 24K",
-      "Tặng bộ sản phẩm dưỡng da",
-    ],
-  },
-  {
-    id: "10",
-    title: "Gói Cặp Đôi",
-    description:
-      "Liệu trình spa dành cho cặp đôi, bao gồm massage thư giãn và chăm sóc da mặt trong không gian riêng tư.",
-    price: 2500000,
-    duration: 120,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "package",
-    featured: false,
-    benefits: [
-      "Massage cặp đôi",
-      "Chăm sóc da mặt",
-      "Tẩy tế bào chết",
-      "Đồ uống đặc biệt",
-      "Không gian riêng tư",
-    ],
-  },
-  {
-    id: "11",
-    title: "Liệu Trình Detox Da",
-    description:
-      "Loại bỏ độc tố và tạp chất trên da, giúp da sạch sẽ, thông thoáng và khỏe mạnh hơn.",
-    price: 1100000,
-    duration: 90,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "face",
-    featured: false,
-    benefits: [
-      "Loại bỏ độc tố",
-      "Làm sạch sâu lỗ chân lông",
-      "Cân bằng dầu nhờn",
-      "Ngăn ngừa mụn",
-    ],
-  },
-  {
-    id: "12",
-    title: "Massage Bầu",
-    description:
-      "Kỹ thuật massage đặc biệt dành cho phụ nữ mang thai, giúp giảm đau lưng, phù chân và cải thiện giấc ngủ.",
-    price: 900000,
-    duration: 60,
-    image: "/placeholder.svg?height=400&width=600",
-    categoryId: "massage",
-    featured: false,
-    benefits: [
-      "Giảm đau lưng",
-      "Giảm phù chân",
-      "Cải thiện giấc ngủ",
-      "An toàn cho mẹ và bé",
-    ],
-  },
-];
+import { useEffect, useState } from "react";
 
 export default function BookingPage() {
   const searchParams = useSearchParams();
   const serviceId = searchParams.get("service") || "";
+  const [services, setServices] = useState<Service[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchServices = async () => {
+      try {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/services`);
+        if (!response.ok) {
+          throw new Error('Failed to fetch services');
+        }
+        const data = await response.json();
+        // Transform the API data to match our Service type
+        const transformedServices = data.map((service: any) => ({
+          id: service._id,
+          title: service.name,
+          description: service.description,
+          price: service.price,
+          duration: service.duration,
+          image: "/placeholder.svg?height=400&width=600", // Default image since API doesn't provide one
+          categoryId: service.category._id, // Default category since API doesn't provide one
+          featured: true, // Default featured status
+          benefits: service.features || [], // Map features to benefits
+          category: service.category,
+        }));
+        setServices(transformedServices);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'An error occurred');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchServices();
+  }, []);
+
+  if (loading) {
+    return (
+      <>
+        <Header />
+        <div className="flex min-h-[100dvh] flex-col bg-[#FFFDF5] font-['Roboto',sans-serif]">
+          <main className="flex-1 flex items-center justify-center">
+            <p>Loading services...</p>
+          </main>
+        </div>
+        <Footer />
+      </>
+    );
+  }
+
+  if (error) {
+    return (
+      <>
+        <Header />
+        <div className="flex min-h-[100dvh] flex-col bg-[#FFFDF5] font-['Roboto',sans-serif]">
+          <main className="flex-1 flex items-center justify-center">
+            <p className="text-red-500">Error: {error}</p>
+          </main>
+        </div>
+        <Footer />
+      </>
+    );
+  }
 
   return (
     <>

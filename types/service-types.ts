@@ -1,6 +1,8 @@
 export interface ServiceCategory {
   id: string
   name: string
+  description?: string
+  image?: string
 }
 
 export interface Service {
@@ -10,7 +12,7 @@ export interface Service {
   price: number
   duration: number
   image: string
-  categoryId: string
+  category: ServiceCategory
   featured: boolean
   benefits: string[]
 }

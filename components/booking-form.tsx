@@ -149,18 +149,56 @@ export function BookingForm({ selectedServiceId, services }: BookingFormProps) {
 
       // Simulate API call
       try {
-        await new Promise((resolve) => setTimeout(resolve, 1500))
-        setIsSuccess(true)
+        let formattedDateForApi = null;
+        if(formData.date && formData.timeSlot) {
+          const selectedDate = new Date(formData.date);
+          const [hours, minutes] = formData.timeSlot.split(':').map(Number);
+          selectedDate.setHours(hours, minutes, 0, 0);
+          formattedDateForApi = selectedDate.toISOString();
+        }
+        // Removed simulation and added real fetch call
+        const requestBody = {
+          customerName: formData.firstName + ' ' + formData.lastName,
+          customerPhone: formData.phone,
+          customerEmail: formData.email,
+          services: services.find((service) => service.id === formData.serviceId),
+          date: formattedDateForApi, // Format the date correctly
+          status: 'pending' // The initial status for a new booking
+        };
+
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/booking`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(requestBody)
+        });
+
+        if (!response.ok) {
+          // Handle non-success HTTP responses
+          const errorData = await response.json();
+          console.error("API error:", response.status, errorData);
+          // You might want to set an error state here
+          setIsSuccess(false); // Assuming not successful if API call fails
+        } else {
+          // Handle success
+          const data = await response.json();
+          console.log("API success:", data);
+          setIsSuccess(true);
+        }
+
       } catch (error) {
-        console.error("Error submitting form:", error)
+        console.error("Error submitting form:", error);
+        setIsSuccess(false); // Assuming not successful if fetch fails
       } finally {
-        setIsSubmitting(false)
+        setIsSubmitting(false);
       }
     }
   }
 
   // Find selected service
   const selectedService = services.find((service) => service.id === formData.serviceId)
+  console.log("selectedService", selectedService)
 
   if (isSuccess) {
     return <BookingSuccess formData={formData} selectedService={selectedService} />
@@ -255,10 +293,10 @@ export function BookingForm({ selectedServiceId, services }: BookingFormProps) {
                     selected={formData.date}
                     onSelect={handleDateChange}
                     disabled={(date) => {
-                      // Disable dates in the past and Sundays
+                      // Disable dates in the past
                       const today = new Date()
                       today.setHours(0, 0, 0, 0)
-                      return date < today || date.getDay() === 0
+                      return date < today
                     }}
                     locale={vi}
                     className="rounded-md border"

@@ -89,11 +89,11 @@ export function PriceCard({
         </CardContent>
         <CardFooter>
           <motion.div className="w-full" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link href="/booking" className="w-full block">
+            {/* <Link href="/booking" className="w-full block">
               <Button className="w-full bg-[#fdc700] hover:bg-[#e3b400] text-black transition-colors">
                 Đặt Lịch Ngay
               </Button>
-            </Link>
+            </Link> */}
           </motion.div>
         </CardFooter>
       </Card>

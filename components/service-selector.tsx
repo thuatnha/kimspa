@@ -10,7 +10,7 @@ import type { Service } from "@/types/service-types"
 
 interface ServiceSelectorProps {
   services: Service[]
-  selectedServiceId: string
+  selectedServiceId?: string
   onChange: (serviceId: string) => void
 }
 
@@ -20,7 +20,7 @@ export function ServiceSelector({ services, selectedServiceId, onChange }: Servi
   // Group services by category
   const servicesByCategory = services.reduce(
     (acc, service) => {
-      const category = service.categoryId
+      const category = service.category.name
       if (!acc[category]) {
         acc[category] = []
       }
@@ -30,14 +30,6 @@ export function ServiceSelector({ services, selectedServiceId, onChange }: Servi
     {} as Record<string, Service[]>,
   )
 
-  // Get category names
-  const categoryNames: Record<string, string> = {
-    face: "Chăm sóc da mặt",
-    body: "Chăm sóc cơ thể",
-    massage: "Massage",
-    treatment: "Điều trị chuyên sâu",
-    package: "Gói dịch vụ",
-  }
 
   const selectedService = services.find((service) => service.id === selectedServiceId)
 
@@ -75,7 +67,7 @@ export function ServiceSelector({ services, selectedServiceId, onChange }: Servi
           <CommandList>
             <CommandEmpty>Không tìm thấy dịch vụ.</CommandEmpty>
             {Object.keys(servicesByCategory).map((categoryId) => (
-              <CommandGroup key={categoryId} heading={categoryNames[categoryId] || categoryId}>
+              <CommandGroup key={categoryId} heading={categoryId}>
                 {servicesByCategory[categoryId].map((service) => (
                   <CommandItem
                     key={service.id}
