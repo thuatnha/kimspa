@@ -87,9 +87,9 @@ const PrivacyPolicyPage = () => {
             <strong>Hộ kinh doanh KIM SKIN CLINIC & HEALTH CARE</strong>
           </p>
           <p>
-            Địa chỉ: Đang chuyển địa điểm (sẽ cập nhật sau khi có địa chỉ mới)
+            Địa chỉ: Khu gia binh Trần Hưng đạo, xã Đức Lập, tỉnh Lâm Đồng
           </p>
-          <p>Điện thoại: 0938060555</p>
+          <p>Điện thoại: 0938 060 555</p>
           <p>Email: nguyenhoangbaokim2015@gmail.com</p>
         </Section>
       </div>

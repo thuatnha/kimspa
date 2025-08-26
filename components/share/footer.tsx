@@ -66,7 +66,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-2">
                   <motion.div className="flex items-start gap-2" whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
                     <MapPin className="h-5 w-5 text-[#fdc700] shrink-0 mt-0.5" />
-                    <span className="text-sm text-[#5D5D5D]">Đang chuyển địa điểm (sẽ cập nhật sau khi có địa chỉ mới)</span>
+                    <span className="text-sm text-[#5D5D5D]">Khu gia binh Trần Hưng đạo, xã Đức Lập, tỉnh Lâm Đồng</span>
                   </motion.div>
                   <motion.div className="flex items-center gap-2" whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
                     <Phone className="h-5 w-5 text-[#fdc700]" />

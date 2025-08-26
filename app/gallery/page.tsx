@@ -67,7 +67,7 @@ const galleryItems = [
   },
   {
     id: "8",
-    src: "/placeholder.svg?height=600&width=600",
+    src: "https://salt.tkbcdn.com/ts/ds/2c/d5/34/90adaa1a1c9e4c49f9e3992a0fa76baf.png",
     alt: "Kết quả trẻ hóa",
     title: "Kết Quả Trẻ Hóa Da",
     description: "Sau 5 lần điều trị",
@@ -75,11 +75,11 @@ const galleryItems = [
   },
   {
     id: "9",
-    src: "/placeholder.svg?height=600&width=600",
-    alt: "Sản phẩm dưỡng da",
-    title: "Bộ Sản Phẩm Dưỡng Da",
-    description: "Dành cho da nhạy cảm",
-    category: "Sản phẩm",
+    src: "https://salt.tkbcdn.com/ts/ds/f8/eb/19/9112fc485a0f7a76f284114919fa5884.jpg",
+    alt: "Kết Quả Trẻ Hóa Da",
+    title: "Kết Quả Trẻ Hóa Da",
+    description: "Kết Quả Trẻ Hóa Da",
+    category: "Kết quả",
   },
   {
     id: "10",
